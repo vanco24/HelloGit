@@ -13,7 +13,7 @@ public class HelloSpringBootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HelloSpringBootApplication.class, args);
 	}
-	@GetMapping("/hello")
+	@GetMapping("/helloGit")
 	public String hello(@RequestParam(value="name", defaultValue = "SpringBoot&Git") String name){
 		return String.format("Hello %s!", name);
 	}
